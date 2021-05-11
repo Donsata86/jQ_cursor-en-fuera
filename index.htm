@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Cursor En/fuera</title>
+    <script>
+        $(document).ready(function() {
+            $('img').hover(function() {
+                var src1 = $(this).attr("src");
+                $(this).attr("src", $(this).attr("src2"));
+                $(this).attr("src2", src1);
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <img src="images\donatello_front.jpg" alt="" src2="images\donatello_back.jpg" style="width: 203px; height: 306px">
+    <img src="images\leonardo_front.jpg" alt="" src2="images\leonardo_back.jpg" style="width: 203px; height: 306px">
+    <img src="images\miguel_angel_front.jpg" alt="" src2="images\miguel_angel_back.jpg" style="width: 203px; height: 306px">
+    <img src="images\rafael_front.jpg" alt="" src2="images\rafael_back.jpg" style="width: 203px; height: 306px">
+
+</body>
+
+</html>
